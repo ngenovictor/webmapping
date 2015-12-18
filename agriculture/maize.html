@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<!--leaflet and bootstrap css -->
+		<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="../leaflet/leaflet.css">
+		<link rel="stylesheet" type="text/css" href="../css/task.css">
+		<link rel="stylesheet" type="text/css" href="../fontawesome/css/font-awesome.css">
+
+		<link rel="icon" href="../images/kenya-icon.jpg">
+
+		<title>Agriculture</title>
+
+	</head>
+	<body>
+		<div class="row container-fluid header">
+			<h1><i class="fa fa-globe fa-lg fa-spin "></i>KENYA DATA PORTAL</h1>
+			<p1><a href="">About</a></p1>
+		</div>
+		<div class="row container-fluid">
+			<div class="col-md-3">
+			  <h3>What would you like to know about Kenya?</h3>
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th>Information Types</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Home<a href="../"><i class="fa fa-home fa-2x pull-right"></i></a></td>
+                  </tr>
+                  <tr>
+                  	<td>Agriculture<a href="."><i class="fa fa-tree fa-2x pull-right"></i></a></td>
+                  </tr>                  
+                </tbody>  
+              </table>
+              <ul class="list-group">
+          		<li class="list-group-item">Maize Production<a href ="maize.html"><i class="fa fa-forward pull-right"></i></a></l1>
+          		<li class="list-group-item">Otherss<a href ="maize.html"><i class="fa fa-forward pull-right"></i></a></li>
+          	  </ul>
+			</div>
+			<div class="col-md-8" id="map"></div>
+		</div>
+
+
+		<!--leaflet, jquery and ajax javascript -->
+		<script src="../js/jquery-1.11.3.js"></script>
+		<script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../leaflet/leaflet.js"></script>
+		<script type="text/javascript" src="../js/leaflet.ajax.min.js"></script>
+		
+
+		<!-- these are the raw data files -->
+		<link rel="maize" type="application/geojson" href="../rawdata/countymaize.geojson">
+		<!--This defines everything to do with the map -->
+		<script type="text/javascript" src="agriculture.js"></script>
+	</body>
+</html>
