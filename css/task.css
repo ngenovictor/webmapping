@@ -1,0 +1,12 @@
+#map{
+	height: 600px;
+}
+.header{
+	background-image: url("../images/headerbar.png");
+}
+.header h1{
+	text-align: center;
+}
+.header p1{
+	padding-left: 100px;
+}

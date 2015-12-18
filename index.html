@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<!--leaflet and bootstrap css -->
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="fontawesome/css/font-awesome.css">
+		<link rel="stylesheet" type="text/css" href="leaflet/leaflet.css">
+		<link rel="stylesheet" type="text/css" href="css/task.css">
+		<link rel="icon" href="images/kenya-icon.jpg">
+		<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+
+		<title>Mapping Project</title>
+
+	</head>
+	<body>
+		<div class="row container-fluid header">
+			<h1><i class="fa fa-globe fa-lg fa-spin "></i>KENYA DATA PORTAL</h1>
+			<p1><a href="">About</a></p1>
+		</div>
+		<div class="row container-fluid">
+			<div class="col-md-3">
+			  <h3>What would you like to know about Kenya?</h3>
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th>Information Types</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                	<td>Home<a href="."><i class="fa fa-home fa-2x pull-right"></i></a></td>
+                  </tr>
+                  <tr>
+                  	<td>Agriculture<a href="agriculture"><i class="fa fa-tree fa-2x pull-right"></i></a></td>
+                  </tr>
+                  <tr>
+                  	<td>Economy<a href=""><i class="fa fa-money fa-2x pull-right"></i></a></td>
+                  </tr>
+                  <tr>
+                    <td>Population<a href=""><i class="fa fa-group fa-2x pull-right"></i></a></td>
+                  </tr>
+                  <tr>
+                    <td>Poverty Index<a href=""><i class="fa fa-info-circle fa-2x pull-right"></i></a></td>
+                  </tr>
+                  <tr>
+                    <td>Education<a href=""><i class="fa fa-graduation-cap fa-2x pull-right"></i></a></td>
+                  </tr>
+                  <tr>
+                    <td>Climate<a href=""><i class="fa fa-cloud fa-2x pull-right"></i></a></td>
+                  </tr>
+                  <tr>
+                    <td>Insfrastructure<a href=""><i class="fa fa-road fa-2x pull-right"></i></a></td>
+                  </tr>
+                </tbody>  
+              </table>
+			</div>
+			<div class="col-md-8" id="map"></div>
+		</div>
+
+
+		<!--leaflet, jquery and ajax javascript -->
+		<script src="js/jquery-1.11.3.js"></script>
+		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="leaflet/leaflet.js"></script>
+		<script type="text/javascript" src="js/leaflet.ajax.min.js"></script>
+		
+
+		<!-- these are the raw data files -->
+		<link rel="KEN_adm0" type="application/geojson" href="rawdata/KEN_adm0.geojson">
+		<link rel="KEN_adm1" type="application/geojson" href="rawdata/KEN_adm1.geojson">
+		<link rel="KEN_adm2" type="application/geojson" href="rawdata/KEN_adm2.geojson">
+		<link rel="KEN_adm3" type="application/geojson" href="rawdata/KEN_adm3.geojson">
+		<link rel="KEN_adm4" type="application/geojson" href="rawdata/KEN_adm4.geojson">
+		<link rel="KEN_adm5" type="application/geojson" href="rawdata/KEN_adm5.geojson">
+		<link rel="kiambu" type="application/json" href="rawdata/kiambucounty.json">
+		<!--This defines everything to do with the map -->
+		<script type="text/javascript" src="js/map.js"></script>
+	</body>
+</html>
